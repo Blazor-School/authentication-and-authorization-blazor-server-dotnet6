@@ -1,5 +1,5 @@
-using BasicAuthentication.Data;
 using Microsoft.AspNetCore.Components.Authorization;
+using Mistake1.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,7 +15,7 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
-    app.UseExceptionHandler("/Error");
+    _ = app.UseExceptionHandler("/Error");
 }
 
 app.UseStaticFiles();

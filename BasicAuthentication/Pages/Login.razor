@@ -1,0 +1,13 @@
+﻿@page "/login"
+@using BasicAuthentication.Data
+@inject BlazorSchoolAuthenticationStateProvider BlazorSchoolAuthenticationStateProvider
+
+<h3>Login</h3>
+<button type="button" class="btn btn-success" @onclick="LoginAsync">Login</button>
+
+@code {
+    public async Task LoginAsync()
+    {
+        await BlazorSchoolAuthenticationStateProvider.LoginAsync("blazorschool", "blazorschool");
+    }
+}

@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage;
 using Newtonsoft.Json;
 
-namespace BasicAuthentication.Data;
+namespace Mistake1.Data;
 
 public class BlazorSchoolUserService
 {

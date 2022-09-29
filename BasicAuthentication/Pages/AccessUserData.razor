@@ -1,0 +1,6 @@
+﻿@page "/access-user-data"
+@using BasicAuthentication.Data
+@inject BlazorSchoolAuthenticationStateProvider BlazorSchoolAuthenticationStateProvider
+
+<h3>AccessUserData</h3>
+<div>Username: @BlazorSchoolAuthenticationStateProvider.CurrentUser.Username</div>

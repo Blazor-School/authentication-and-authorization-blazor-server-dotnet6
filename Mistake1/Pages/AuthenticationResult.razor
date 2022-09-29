@@ -1,0 +1,30 @@
+﻿@page "/authentication-result"
+@using Mistake1.Data
+@inject BlazorSchoolAuthenticationStateProvider BlazorSchoolAuthenticationStateProvider
+
+<h3>AuthenticationResult</h3>
+<button type="button" class="btn btn-success" @onclick="LoginAsync">Login</button>
+<button type="button" class="btn btn-success" @onclick="LogoutAsync">Logout</button>
+<button type="button" class="btn btn-success" @onclick="RefreshAuthenticateStatusAsync">Refresh authenticate status</button>
+
+<div>Username: @BlazorSchoolAuthenticationStateProvider.CurrentUser.Username</div>
+<h2>Authenticate status: @IsAuthenticated</h2>
+
+@code {
+    public bool IsAuthenticated { get; set; } = false;
+    public async Task LoginAsync()
+    {
+        await BlazorSchoolAuthenticationStateProvider.LoginAsync("blazorschool", "blazorschool");
+    }
+
+    public async Task RefreshAuthenticateStatusAsync()
+    {
+        var authState = await BlazorSchoolAuthenticationStateProvider.GetAuthenticationStateAsync();
+        IsAuthenticated = authState.User.Identity.IsAuthenticated;
+    }
+
+    public async Task LogoutAsync()
+    {
+        await BlazorSchoolAuthenticationStateProvider.LogoutAsync();
+    }
+}

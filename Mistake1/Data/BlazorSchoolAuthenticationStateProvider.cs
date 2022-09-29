@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Components.Authorization;
 using System.Security.Claims;
 
-namespace BasicAuthentication.Data;
+namespace Mistake1.Data;
 
 public class BlazorSchoolAuthenticationStateProvider : AuthenticationStateProvider, IDisposable
 {
