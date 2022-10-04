@@ -37,17 +37,22 @@ public class BlazorSchoolUserService
 
     public async Task<User?> FetchUserFromBrowserAsync()
     {
-        var storedUserResult = await _protectedLocalStorage.GetAsync<string>(_blazorSchoolStorageKey);
-
-        if (storedUserResult.Success && !string.IsNullOrEmpty(storedUserResult.Value))
+        try
         {
-            var user = JsonConvert.DeserializeObject<User>(storedUserResult.Value);
+            var storedUserResult = await _protectedLocalStorage.GetAsync<string>(_blazorSchoolStorageKey);
 
-            return user;
+            if (storedUserResult.Success && !string.IsNullOrEmpty(storedUserResult.Value))
+            {
+                var user = JsonConvert.DeserializeObject<User>(storedUserResult.Value);
+
+                return user;
+            }
+        }
+        catch (InvalidOperationException)
+        {
         }
 
         return null;
     }
-
     public async Task ClearBrowserUserDataAsync() => await _protectedLocalStorage.DeleteAsync(_blazorSchoolStorageKey);
 }

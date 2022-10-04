@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage;
 using Newtonsoft.Json;
 
-namespace BasicAuthentication.Data;
+namespace AuthorizeOnRoute.Data;
 
 public class BlazorSchoolUserService
 {
@@ -32,7 +32,7 @@ public class BlazorSchoolUserService
     public async Task PersistUserToBrowserAsync(User user)
     {
         string userJson = JsonConvert.SerializeObject(user);
-        await _protectedLocalStorage.SetAsync(_blazorSchoolStorageKey, userJson);
+            await _protectedLocalStorage.SetAsync(_blazorSchoolStorageKey, userJson);
     }
 
     public async Task<User?> FetchUserFromBrowserAsync()

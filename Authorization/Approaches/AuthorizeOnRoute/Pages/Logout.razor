@@ -1,0 +1,13 @@
+﻿@page "/logout"
+@using AuthorizeOnRoute.Data
+@inject BlazorSchoolAuthenticationStateProvider BlazorSchoolAuthenticationStateProvider
+
+<h3>Logout</h3>
+<button type="button" class="btn btn-success" @onclick="LogoutAsync">Logout</button>
+
+@code {
+    public async Task LogoutAsync()
+    {
+        await BlazorSchoolAuthenticationStateProvider.LogoutAsync();
+    }
+}

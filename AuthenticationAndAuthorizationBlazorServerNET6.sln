@@ -5,7 +5,9 @@ VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BasicAuthentication", "BasicAuthentication\BasicAuthentication.csproj", "{91AAD12C-7748-499A-BC19-E58CC03FCBDA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mistake1", "Mistake1\Mistake1.csproj", "{6CD5E459-7972-47AD-A9FA-7FF8422A5D54}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mistake1", "Mistake1\Mistake1.csproj", "{6CD5E459-7972-47AD-A9FA-7FF8422A5D54}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthorizeOnRoute", "Authorization\Approaches\AuthorizeOnRoute\AuthorizeOnRoute.csproj", "{C0F674E3-C85E-4837-A591-F2C3743803E5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{6CD5E459-7972-47AD-A9FA-7FF8422A5D54}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6CD5E459-7972-47AD-A9FA-7FF8422A5D54}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6CD5E459-7972-47AD-A9FA-7FF8422A5D54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0F674E3-C85E-4837-A591-F2C3743803E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0F674E3-C85E-4837-A591-F2C3743803E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0F674E3-C85E-4837-A591-F2C3743803E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0F674E3-C85E-4837-A591-F2C3743803E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
