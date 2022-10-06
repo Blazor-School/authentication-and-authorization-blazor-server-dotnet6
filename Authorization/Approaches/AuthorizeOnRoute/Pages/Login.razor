@@ -4,11 +4,23 @@
 @attribute [AllowAnonymous]
 
 <h3>Login</h3>
-<button type="button" class="btn btn-success" @onclick="LoginAsync">Login</button>
+<button type="button" class="btn btn-success" @onclick="LoginAsNormalUserAsync">Login as Normal User</button>
+<button type="button" class="btn btn-success" @onclick="LoginAsPaidUserAsync">Login as Paid User</button>
+<button type="button" class="btn btn-success" @onclick="LoginAsAdminAsync">Login as Admin</button>
 
 @code {
-    public async Task LoginAsync()
+    public async Task LoginAsNormalUserAsync()
     {
-        await BlazorSchoolAuthenticationStateProvider.LoginAsync("blazorschool", "blazorschool");
+        await BlazorSchoolAuthenticationStateProvider.LoginAsync("blazorschool_normal", "blazorschool");
+    }
+
+    public async Task LoginAsPaidUserAsync()
+    {
+        await BlazorSchoolAuthenticationStateProvider.LoginAsync("blazorschool_paid", "blazorschool");
+    }
+
+    public async Task LoginAsAdminAsync()
+    {
+        await BlazorSchoolAuthenticationStateProvider.LoginAsync("blazorschool_admin", "blazorschool");
     }
 }

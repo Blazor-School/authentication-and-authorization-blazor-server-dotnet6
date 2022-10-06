@@ -19,8 +19,33 @@ public class BlazorSchoolUserService
         {
             new()
             {
-                Username = "blazorschool",
-                Password = "blazorschool"
+                Username = "blazorschool_normal",
+                Password = "blazorschool",
+                Roles =new()
+                {
+                    "normal_user"
+                }
+            },
+            new()
+            {
+                Username = "blazorschool_paid",
+                Password = "blazorschool",
+                Roles =new()
+                {
+                    "normal_user",
+                    "paid_user"
+                }
+            },
+            new()
+            {
+                Username = "blazorschool_admin",
+                Password = "blazorschool",
+                Roles =new()
+                {
+                    "normal_user",
+                    "paid_user",
+                    "admin"
+                }
             }
         };
 
@@ -32,7 +57,7 @@ public class BlazorSchoolUserService
     public async Task PersistUserToBrowserAsync(User user)
     {
         string userJson = JsonConvert.SerializeObject(user);
-            await _protectedLocalStorage.SetAsync(_blazorSchoolStorageKey, userJson);
+        await _protectedLocalStorage.SetAsync(_blazorSchoolStorageKey, userJson);
     }
 
     public async Task<User?> FetchUserFromBrowserAsync()
