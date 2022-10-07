@@ -7,6 +7,8 @@
 <button type="button" class="btn btn-success" @onclick="LoginAsNormalUserAsync">Login as Normal User</button>
 <button type="button" class="btn btn-success" @onclick="LoginAsPaidUserAsync">Login as Paid User</button>
 <button type="button" class="btn btn-success" @onclick="LoginAsAdminAsync">Login as Admin</button>
+<button type="button" class="btn btn-success" @onclick="LoginAsAdultUserAsync">Login as Adult User</button>
+<button type="button" class="btn btn-success" @onclick="LoginAsAdultAdminAsync">Login as Adult Admin</button>
 
 @code {
     public async Task LoginAsNormalUserAsync()
@@ -22,5 +24,15 @@
     public async Task LoginAsAdminAsync()
     {
         await BlazorSchoolAuthenticationStateProvider.LoginAsync("blazorschool_admin", "blazorschool");
+    }
+    
+    public async Task LoginAsAdultUserAsync()
+    {
+        await BlazorSchoolAuthenticationStateProvider.LoginAsync("blazorschool_adult_user", "blazorschool");
+    }
+    
+    public async Task LoginAsAdultAdminAsync()
+    {
+        await BlazorSchoolAuthenticationStateProvider.LoginAsync("blazorschool_adult_admin", "blazorschool");
     }
 }

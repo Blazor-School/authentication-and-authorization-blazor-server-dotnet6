@@ -46,6 +46,27 @@ public class BlazorSchoolUserService
                     "paid_user",
                     "admin"
                 }
+            },
+            new()
+            {
+                Username = "blazorschool_adult_user",
+                Password = "blazorschool",
+                Roles =new()
+                {
+                    "normal_user"
+                },
+                Age = 22
+            },
+            new()
+            {
+                Username = "blazorschool_adult_admin",
+                Password = "blazorschool",
+                Roles =new()
+                {
+                    "normal_user",
+                    "admin"
+                },
+                Age = 22
             }
         };
 

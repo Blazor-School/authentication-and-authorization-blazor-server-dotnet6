@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mistake1", "Mistake1\Mistak
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthorizeOnRoute", "Authorization\Approaches\AuthorizeOnRoute\AuthorizeOnRoute.csproj", "{C0F674E3-C85E-4837-A591-F2C3743803E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthorizeOnIndividualComponent", "Authorization\Approaches\AuthorizeOnIndividualComponent\AuthorizeOnIndividualComponent.csproj", "{9EF41B98-CA22-46F8-B801-795BF0CF1DA9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthorizeOnIndividualComponent", "Authorization\Approaches\AuthorizeOnIndividualComponent\AuthorizeOnIndividualComponent.csproj", "{9EF41B98-CA22-46F8-B801-795BF0CF1DA9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
