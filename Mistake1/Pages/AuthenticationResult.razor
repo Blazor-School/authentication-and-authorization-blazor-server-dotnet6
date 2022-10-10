@@ -12,6 +12,7 @@
 
 @code {
     public bool IsAuthenticated { get; set; } = false;
+
     public async Task LoginAsync()
     {
         await BlazorSchoolAuthenticationStateProvider.LoginAsync("blazorschool", "blazorschool");
@@ -20,7 +21,7 @@
     public async Task RefreshAuthenticateStatusAsync()
     {
         var authState = await BlazorSchoolAuthenticationStateProvider.GetAuthenticationStateAsync();
-        IsAuthenticated = authState.User.Identity.IsAuthenticated;
+        IsAuthenticated = authState?.User?.Identity?.IsAuthenticated ?? false;
     }
 
     public async Task LogoutAsync()

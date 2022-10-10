@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BasicAuthentication", "Basi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mistake1", "Mistake1\Mistake1.csproj", "{6CD5E459-7972-47AD-A9FA-7FF8422A5D54}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mistake2", "Mistake2\Mistake2.csproj", "{12A18271-897C-435A-B731-71B3F045AB51}"
+EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthorizeOnRoute", "Authorization\Approaches\AuthorizeOnRoute\AuthorizeOnRoute.csproj", "{C0F674E3-C85E-4837-A591-F2C3743803E5}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthorizeOnIndividualComponent", "Authorization\Approaches\AuthorizeOnIndividualComponent\AuthorizeOnIndividualComponent.csproj", "{9EF41B98-CA22-46F8-B801-795BF0CF1DA9}"
@@ -25,6 +27,10 @@ Global
 		{6CD5E459-7972-47AD-A9FA-7FF8422A5D54}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6CD5E459-7972-47AD-A9FA-7FF8422A5D54}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6CD5E459-7972-47AD-A9FA-7FF8422A5D54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12A18271-897C-435A-B731-71B3F045AB51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12A18271-897C-435A-B731-71B3F045AB51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12A18271-897C-435A-B731-71B3F045AB51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12A18271-897C-435A-B731-71B3F045AB51}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C0F674E3-C85E-4837-A591-F2C3743803E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C0F674E3-C85E-4837-A591-F2C3743803E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C0F674E3-C85E-4837-A591-F2C3743803E5}.Release|Any CPU.ActiveCfg = Release|Any CPU

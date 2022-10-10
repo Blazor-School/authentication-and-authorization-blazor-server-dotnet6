@@ -1,0 +1,20 @@
+﻿@using Mistake2.Data
+@using System.Security.Claims
+@inject BlazorSchoolAuthenticationStateProvider BlazorSchoolAuthenticationStateProvider
+
+<h3>BadImplementation</h3>
+<div>Username: @Username</div>
+
+@code {
+    public string Username { get; set; } = "";
+
+    protected override async Task OnInitializedAsync()
+    {
+        var authState = await BlazorSchoolAuthenticationStateProvider.GetAuthenticationStateAsync();
+
+        if(authState is not null)
+        {
+            Username = authState.User.FindFirstValue(ClaimTypes.Name);
+        }
+    }
+}
