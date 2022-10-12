@@ -20,7 +20,8 @@ public class BlazorSchoolUserService
             new()
             {
                 Username = "blazorschool",
-                Password = "blazorschool"
+                Password = "blazorschool",
+                FullName = "Blazor School"
             }
         };
 
