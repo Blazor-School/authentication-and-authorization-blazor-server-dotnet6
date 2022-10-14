@@ -8,7 +8,7 @@
 <button type="button" class="btn btn-success" @onclick="RefreshAuthenticateStatusAsync">Refresh authenticate status</button>
 
 <div>Username: @BlazorSchoolAuthenticationStateProvider.CurrentUser.Username</div>
-<h2>Authenticate status: @IsAuthenticated</h2>
+<h2>IsAuthenticated: @IsAuthenticated</h2>
 
 @code {
     public bool IsAuthenticated { get; set; } = false;
