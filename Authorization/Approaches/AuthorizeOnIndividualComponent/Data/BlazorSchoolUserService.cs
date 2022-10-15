@@ -24,7 +24,8 @@ public class BlazorSchoolUserService
                 Roles =new()
                 {
                     "normal_user"
-                }
+                },
+                Age = 12
             },
             new()
             {
@@ -34,7 +35,8 @@ public class BlazorSchoolUserService
                 {
                     "normal_user",
                     "paid_user"
-                }
+                },
+                Age = 14
             },
             new()
             {
@@ -45,7 +47,8 @@ public class BlazorSchoolUserService
                     "normal_user",
                     "paid_user",
                     "admin"
-                }
+                },
+                Age = 20
             }
         };
 
